@@ -9,7 +9,7 @@ public class Ball extends Sprite
     {
         xdir = 1;
         ydir = -1;
-        ImageIcon ii = new ImageIcon("res/ball.png");
+        ImageIcon ii = new ImageIcon(getClass().getResource("res/ball.png"));
         image = ii.getImage();
         i_width = image.getWidth(null);
         i_height = image.getHeight(null);

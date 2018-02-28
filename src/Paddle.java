@@ -8,7 +8,7 @@ public class Paddle extends Sprite
 
     public Paddle()
     {
-        ImageIcon ii = new ImageIcon("res/paddle.png");
+        ImageIcon ii = new ImageIcon(getClass().getResource("res/paddle.png"));
         image = ii.getImage();
         i_width = image.getWidth(null);
         i_height = image.getHeight(null);

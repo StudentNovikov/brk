@@ -31,6 +31,12 @@ public class Board extends JPanel
         timer.scheduleAtFixedRate(new ScheduleTask(), Utils.DELAY, Utils.PERIOD);
     }
 
+    public void addNotify()
+    {
+        super.addNotify();
+        gameInit();
+    }
+
     public void gameInit()
     {
         ball = new Ball();
